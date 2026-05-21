@@ -18,23 +18,23 @@ export default function Sitemap() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f8f9fa]">
+    <div className="min-h-screen flex flex-col bg-[#f9fafb]">
       <Header />
       <main className="flex-1">
-        <section className="bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8c] text-white py-20">
+        <section className="bg-gradient-to-br from-[#111111] to-[#1a1a1a] text-white py-20">
           <div className="container mx-auto">
             <h1 className="text-5xl font-bold mb-6">Sitemap</h1>
           </div>
         </section>
         <section className="py-20 bg-white">
           <div className="container mx-auto max-w-3xl">
-            <h2 className="text-2xl font-bold text-[#1e3a5f] mb-8">Site Navigation</h2>
+            <h2 className="text-2xl font-bold text-[#111111] mb-8">Site Navigation</h2>
             <div className="grid grid-cols-2 gap-6">
               {pages.map((page) => (
                 <Link
                   key={page.href}
                   href={page.href}
-                  className="text-[#1e3a5f] hover:text-[#c9a961] transition-all duration-200 ease-out font-medium"
+                  className="text-[#111111] hover:text-[#F7C200] transition-all duration-200 ease-out font-medium"
                 >
                   {page.label}
                 </Link>

@@ -30,12 +30,12 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f8f9fa]">
+    <div className="min-h-screen flex flex-col bg-[#f9fafb]">
       <Header />
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8c] text-white py-20">
+        <section className="bg-gradient-to-br from-[#111111] to-[#1a1a1a] text-white py-20">
           <div className="container mx-auto">
             <h1 className="text-5xl font-bold mb-6">{t('about.heading')}</h1>
             <p className="text-xl text-gray-200 max-w-2xl">{t('about.subheading')}</p>
@@ -47,7 +47,7 @@ export default function About() {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-[#1e3a5f] mb-6">{t('about.history')}</h2>
+                <h2 className="text-4xl font-bold text-[#111111] mb-6">{t('about.history')}</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">{t('about.historyDesc')}</p>
               </div>
               <div
@@ -63,13 +63,13 @@ export default function About() {
         </section>
 
         {/* Commodities Section */}
-        <section className="py-20 bg-gradient-to-r from-[#1e3a5f]/5 to-[#c9a961]/5">
+        <section className="py-20 bg-gradient-to-r from-[#111111]/5 to-[#F7C200]/5">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-[#1e3a5f] mb-12 text-center">{t('about.commodities')}</h2>
+            <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">{t('about.commodities')}</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
               {commodities.map((commodity, idx) => (
                 <div key={idx} className="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-all duration-200 ease-out">
-                  <p className="font-semibold text-[#1e3a5f]">{commodity}</p>
+                  <p className="font-semibold text-[#111111]">{commodity}</p>
                 </div>
               ))}
             </div>
@@ -79,11 +79,11 @@ export default function About() {
         {/* Values Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-[#1e3a5f] mb-12 text-center">{t('about.values')}</h2>
+            <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">{t('about.values')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {values.map((value, idx) => (
                 <div key={idx} className="card-elevated p-8">
-                  <h3 className="text-2xl font-bold text-[#c9a961] mb-3">{value.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#F7C200] mb-3">{value.title}</h3>
                   <p className="text-gray-700">{value.desc}</p>
                 </div>
               ))}
@@ -92,7 +92,7 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-[#1e3a5f] to-[#2d5a8c] text-white">
+        <section className="py-20 bg-gradient-to-r from-[#111111] to-[#1a1a1a] text-white">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">{t('common.learnMore')}</h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
