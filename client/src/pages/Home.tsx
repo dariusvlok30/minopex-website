@@ -40,19 +40,15 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/what-we-do">
-                    <a>
-                      <Button className="btn-primary flex items-center gap-2">
-                        {t('home.seeWhatWeDo')}
-                        <ArrowRight size={18} />
-                      </Button>
-                    </a>
+                    <Button className="btn-primary flex items-center gap-2">
+                      {t('home.seeWhatWeDo')}
+                      <ArrowRight size={18} />
+                    </Button>
                   </Link>
                   <Link href="/contact">
-                    <a>
-                      <Button className="btn-secondary">
-                        {t('common.contactUs')}
-                      </Button>
-                    </a>
+                    <Button className="btn-secondary">
+                      {t('common.contactUs')}
+                    </Button>
                   </Link>
                 </div>
               </div>
@@ -70,11 +66,9 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">
                     {t('home.surfaceDesc')}
                   </p>
-                  <Link href="/what-we-do">
-                    <a className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-all duration-200 ease-out flex items-center gap-2">
-                      {t('common.learnMore')}
-                      <ArrowRight size={16} />
-                    </a>
+                  <Link href="/what-we-do" className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-all duration-200 ease-out flex items-center gap-2">
+                    {t('common.learnMore')}
+                    <ArrowRight size={16} />
                   </Link>
                 </div>
 
@@ -89,11 +83,9 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">
                     {t('home.undergroundDesc')}
                   </p>
-                  <Link href="/what-we-do">
-                    <a className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-all duration-200 ease-out flex items-center gap-2">
-                      {t('common.learnMore')}
-                      <ArrowRight size={16} />
-                    </a>
+                  <Link href="/what-we-do" className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-all duration-200 ease-out flex items-center gap-2">
+                    {t('common.learnMore')}
+                    <ArrowRight size={16} />
                   </Link>
                 </div>
               </div>
@@ -137,11 +129,9 @@ export default function Home() {
                   {t('home.ourPeopleDesc')}
                 </p>
                 <Link href="/careers">
-                  <a>
-                    <Button className="btn-primary">
-                      {t('nav.careers')}
-                    </Button>
-                  </a>
+                  <Button className="btn-primary">
+                    {t('nav.careers')}
+                  </Button>
                 </Link>
               </div>
               <div
@@ -176,11 +166,9 @@ export default function Home() {
                   {t('home.partnershipDesc')}
                 </p>
                 <Link href="/about">
-                  <a>
-                    <Button className="btn-accent">
-                      {t('nav.about')}
-                    </Button>
-                  </a>
+                  <Button className="btn-accent">
+                    {t('nav.about')}
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -199,11 +187,9 @@ export default function Home() {
                   {t('sustainability.subheading')}
                 </p>
                 <Link href="/sustainability">
-                  <a>
-                    <Button className="btn-accent">
-                      {t('common.learnMore')}
-                    </Button>
-                  </a>
+                  <Button className="btn-accent">
+                    {t('common.learnMore')}
+                  </Button>
                 </Link>
               </div>
               <div
@@ -228,11 +214,9 @@ export default function Home() {
               Ready to partner with Minopex? Get in touch with our team today.
             </p>
             <Link href="/contact">
-              <a>
-                <Button className="btn-primary">
-                  {t('common.contactUs')}
-                </Button>
-              </a>
+              <Button className="btn-primary">
+                {t('common.contactUs')}
+              </Button>
             </Link>
           </div>
         </section>

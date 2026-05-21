@@ -31,10 +31,12 @@ export default function Sitemap() {
             <h2 className="text-2xl font-bold text-[#1e3a5f] mb-8">Site Navigation</h2>
             <div className="grid grid-cols-2 gap-6">
               {pages.map((page) => (
-                <Link key={page.href} href={page.href}>
-                  <a className="text-[#1e3a5f] hover:text-[#c9a961] transition-all duration-200 ease-out font-medium">
-                    {page.label}
-                  </a>
+                <Link
+                  key={page.href}
+                  href={page.href}
+                  className="text-[#1e3a5f] hover:text-[#c9a961] transition-all duration-200 ease-out font-medium"
+                >
+                  {page.label}
                 </Link>
               ))}
             </div>

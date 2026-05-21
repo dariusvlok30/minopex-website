@@ -56,24 +56,18 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/what-we-do">
-                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
-                    {t('whatWeDo.surfaceOpsHeading')}
-                  </a>
+                <Link href="/what-we-do" className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
+                  {t('whatWeDo.surfaceOpsHeading')}
                 </Link>
               </li>
               <li>
-                <Link href="/what-we-do">
-                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
-                    {t('whatWeDo.undergroundOpsHeading')}
-                  </a>
+                <Link href="/what-we-do" className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
+                  {t('whatWeDo.undergroundOpsHeading')}
                 </Link>
               </li>
               <li>
-                <Link href="/careers">
-                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
-                    {t('nav.careers')}
-                  </a>
+                <Link href="/careers" className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
+                  {t('nav.careers')}
                 </Link>
               </li>
             </ul>
@@ -87,10 +81,8 @@ export default function Footer() {
             <ul className="space-y-2 mb-6">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href}>
-                    <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
-                      {link.label}
-                    </a>
+                  <Link href={link.href} className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
+                    {link.label}
                   </Link>
                 </li>
               ))}

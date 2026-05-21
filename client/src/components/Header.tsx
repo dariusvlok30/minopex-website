@@ -29,22 +29,18 @@ export default function Header() {
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center gap-2 hover:opacity-80 transition-all duration-200 ease-out">
-              <div className="w-10 h-10 bg-[#1e3a5f] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">M</span>
-              </div>
-              <span className="font-bold text-xl text-[#1e3a5f] hidden sm:inline">Minopex</span>
-            </a>
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-all duration-200 ease-out">
+            <div className="w-10 h-10 bg-[#1e3a5f] rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">M</span>
+            </div>
+            <span className="font-bold text-xl text-[#1e3a5f] hidden sm:inline">Minopex</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a className="px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-all duration-200 ease-out">
-                  {item.label}
-                </a>
+              <Link key={item.href} href={item.href} className="px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-all duration-200 ease-out">
+                {item.label}
               </Link>
             ))}
           </nav>
@@ -84,13 +80,13 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="lg:hidden border-t border-border py-4 space-y-2">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className="block px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-all duration-200 ease-out"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-all duration-200 ease-out"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.label}
               </Link>
             ))}
           </nav>
