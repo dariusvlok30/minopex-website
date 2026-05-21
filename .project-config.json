@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663559878215/6jvdNPcGGMPGcAdwJZLocL",
+    "access_key_id": "ASIAZV3A2ECZJFEK7AJR",
+    "secret_access_key": "lPRbI/pOpteJdxITnCVtJ5Jxd3iWS2IpgNJacDNa",
+    "session_token": "IQoJb3JpZ2luX2VjEDoaCXVzLWVhc3QtMSJHMEUCIAl5bjAMMk3nwkTVZ5tVlurSg1n5Lhq3h9OQQ87r8WxgAiEA4XgG7eDXvmEOLUHd0YKxWcqMNAso6kNMN1j53lwMDqoq9gMIAhAEGgw2NjUzODYwOTg4NjYiDGPDr5XdjnuwGl/f0SrTA2Thq9CGWOkXGJkzJlkMOZrwgjT+NEVqWqowBWF2sK3x7UMYfU9mVSLqnd4PcLF6GB2YA9+d8BMy6H0Jyc2JPZu/47bPL3BYe2ecayHK6pkykQyMcHQablJ6PXms1ogV61/d9WPSub/frrHF1g7VwcpdPp8yM1g8GvxedA8Y6AOIp0Ryiw+tEz8RUcLWgVR4rguKB/ANRs/OwMXB3U3wb7LXFMATiC3nr6HWARMWh/t/xsfIz+nK1a8f9hrr4u/TMMHoOMMuDCdPUm1QYCFIsDuIppRgiWzU1R3KwZFm7qEGCnRtqatbWJ4vKjsGBAwMoldkY6AiHY1/2urdpR9He17fFIGdT9CwnHxwZh65Wfx57Y8C1WhhlyHHdAMwNqvgv5k52gWqXXgZFFbSoyCx0BeyVU/55eIw7qVuvqtky3xbB7fkgIVoXRtDXWk4H+TK5fUDKqywaVC9Ta17OgQdYBpgNOq5y/JWKRu+vH6uxZt8WTOXIOl68KTTjiAz43RVF97yX+StjJ83dRiIVt2WMR+P4Hcc6ygEtEyRYq/WDbAevyalFaqy+IRsDpDiez95/WBqCzgzK0GzTthHR4dF7/2CoDp1cFttL5DR37fOHcOAO/o/MMicu9AGOp0Bc/KuvTBPGX5Gb9bncvBS65FbQ/3WgdTrKzyQ9BQzKOHq5WmZI/lvRP+FN239THK9+ud0mZ33Fi/A3nCINI2ZkLs34Rc01hlTv08lG6bx05klvSPjFzWAA8OWip0i10gNORMD9p69ONvwSDq7J6asDG8mc11WkFep+1vTWgfSlxWZrwJgL9qsKpmHh8tKVvcxFcRzFJseV9k/K7YWiQ==",
+    "expiration": "2026-05-21T21:20:08.000Z"
+  },
+  "name": "minopex-website",
+  "path": "/home/ubuntu/minopex-website",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "5URBYwBnHhKJxGb8AyqsbC",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "cZRh4ckFRra6oYt8fP9PNd",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "darius",
+    "OWNER_OPEN_ID": "ghgRgUEbQQn3orHJ9J96Ki",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "660a74e4-b2ca-4ec0-a25a-4d3c2e0b1ca1",
+    "VITE_APP_ID": "6jvdNPcGGMPGcAdwJZLocL",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Minopex - Global Mining Operations \u0026 Maintenance",
+    "VITE_FRONTEND_FORGE_API_KEY": "WbpFRMhKzTHjj8Du5iUY46",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
