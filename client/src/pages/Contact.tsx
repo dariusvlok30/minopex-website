@@ -17,6 +17,7 @@ export default function Contact() {
     subject: '',
     message: '',
   });
+  const [submitting, setSubmitting] = useState(false);
 
   const offices = [
     {
@@ -46,11 +47,23 @@ export default function Contact() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    toast.success(t('contact.form.success'));
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    setSubmitting(true);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error('Failed');
+      toast.success(t('contact.form.success'));
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    } catch {
+      toast.error('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -162,8 +175,8 @@ export default function Contact() {
                   />
                 </div>
 
-                <Button type="submit" className="btn-primary w-full">
-                  {t('contact.form.submit')}
+                <Button type="submit" className="btn-primary w-full" disabled={submitting}>
+                  {submitting ? 'Sending…' : t('contact.form.submit')}
                 </Button>
               </form>
             </div>
