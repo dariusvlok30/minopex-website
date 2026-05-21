@@ -6,17 +6,25 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>{{project_title}}</title>    
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
+    <title>Minopex - Global Mining Operations & Maintenance</title>
+    <meta name="description" content="Leading global mining plant operations and maintenance specialists. 2,000+ employees across 14+ countries with 30+ years of experience." />
+    <meta name="keywords" content="mining operations, plant maintenance, mining services, DRA Global" />
+    <meta name="theme-color" content="#1e3a5f" />
   </head>
 
-  <body>
+  <body dir="ltr">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Initialize language from localStorage
+      const lang = localStorage.getItem('language') || 'en';
+      const isRTL = lang === 'ar';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+      if (isRTL) {
+        document.documentElement.classList.add('rtl');
+      }
+    </script>
     <script
       defer
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
