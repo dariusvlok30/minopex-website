@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center gap-2 hover:opacity-80 transition-smooth">
+            <a className="flex items-center gap-2 hover:opacity-80 transition-all duration-200 ease-out">
               <div className="w-10 h-10 bg-[#1e3a5f] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">M</span>
               </div>
@@ -42,7 +42,7 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a className="px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-smooth">
+                <a className="px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-all duration-200 ease-out">
                   {item.label}
                 </a>
               </Link>
@@ -57,7 +57,7 @@ export default function Header() {
                 <button
                   key={lang.code}
                   onClick={() => setLanguage(lang.code as any)}
-                  className={`px-2 py-1 rounded text-sm font-medium transition-smooth ${
+                  className={`px-2 py-1 rounded text-sm font-medium transition-all duration-200 ease-out ${
                     language === lang.code
                       ? 'bg-[#1e3a5f] text-white'
                       : 'text-foreground hover:bg-[#f8f9fa]'
@@ -72,7 +72,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 hover:bg-[#f8f9fa] rounded transition-smooth"
+              className="lg:hidden p-2 hover:bg-[#f8f9fa] rounded transition-all duration-200 ease-out"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -86,7 +86,7 @@ export default function Header() {
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 <a
-                  className="block px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-smooth"
+                  className="block px-4 py-2 text-sm font-medium text-foreground hover:text-[#1e3a5f] hover:bg-[#f8f9fa] rounded transition-all duration-200 ease-out"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}

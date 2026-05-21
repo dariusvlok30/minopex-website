@@ -68,7 +68,7 @@ export default function About() {
             <h2 className="text-4xl font-bold text-[#1e3a5f] mb-12 text-center">{t('about.commodities')}</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
               {commodities.map((commodity, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-smooth">
+                <div key={idx} className="bg-white p-6 rounded-lg shadow text-center hover:shadow-lg transition-all duration-200 ease-out">
                   <p className="font-semibold text-[#1e3a5f]">{commodity}</p>
                 </div>
               ))}

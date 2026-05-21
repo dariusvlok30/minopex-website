@@ -116,7 +116,7 @@ export default function WhatWeDo() {
               {services.map((service, idx) => {
                 const Icon = service.icon;
                 return (
-                  <div key={idx} className="card-elevated p-8 text-center hover:shadow-xl transition-smooth">
+                  <div key={idx} className="card-elevated p-8 text-center hover:shadow-xl transition-all duration-200 ease-out">
                     <div className="w-16 h-16 bg-[#c9a961] rounded-lg flex items-center justify-center mx-auto mb-4">
                       <Icon className="text-[#1e3a5f]" size={32} />
                     </div>

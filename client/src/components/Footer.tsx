@@ -57,21 +57,21 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/what-we-do">
-                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-smooth">
+                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
                     {t('whatWeDo.surfaceOpsHeading')}
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="/what-we-do">
-                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-smooth">
+                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
                     {t('whatWeDo.undergroundOpsHeading')}
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="/careers">
-                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-smooth">
+                  <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
                     {t('nav.careers')}
                   </a>
                 </Link>
@@ -88,7 +88,7 @@ export default function Footer() {
               {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>
-                    <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-smooth">
+                    <a className="text-sm text-gray-300 hover:text-[#c9a961] transition-all duration-200 ease-out">
                       {link.label}
                     </a>
                   </Link>
@@ -100,21 +100,21 @@ export default function Footer() {
             <div className="flex gap-3">
               <a
                 href="#"
-                className="w-8 h-8 bg-white/10 hover:bg-[#c9a961] rounded flex items-center justify-center transition-smooth"
+                className="w-8 h-8 bg-white/10 hover:bg-[#c9a961] rounded flex items-center justify-center transition-all duration-200 ease-out"
                 aria-label="Facebook"
               >
                 <Facebook size={16} />
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-white/10 hover:bg-[#c9a961] rounded flex items-center justify-center transition-smooth"
+                className="w-8 h-8 bg-white/10 hover:bg-[#c9a961] rounded flex items-center justify-center transition-all duration-200 ease-out"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={16} />
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-white/10 hover:bg-[#c9a961] rounded flex items-center justify-center transition-smooth"
+                className="w-8 h-8 bg-white/10 hover:bg-[#c9a961] rounded flex items-center justify-center transition-all duration-200 ease-out"
                 aria-label="Twitter"
               >
                 <Twitter size={16} />

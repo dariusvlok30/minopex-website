@@ -72,7 +72,7 @@ export default function Contact() {
             <h2 className="text-4xl font-bold text-[#1e3a5f] mb-12 text-center">{t('contact.offices')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {offices.map((office, idx) => (
-                <div key={idx} className="card-elevated p-8 hover:shadow-lg transition-smooth">
+                <div key={idx} className="card-elevated p-8 hover:shadow-lg transition-all duration-200 ease-out">
                   <div className="w-12 h-12 bg-[#c9a961] rounded-lg flex items-center justify-center mb-4">
                     <MapPin className="text-[#1e3a5f]" size={24} />
                   </div>

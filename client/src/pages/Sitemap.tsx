@@ -32,7 +32,7 @@ export default function Sitemap() {
             <div className="grid grid-cols-2 gap-6">
               {pages.map((page) => (
                 <Link key={page.href} href={page.href}>
-                  <a className="text-[#1e3a5f] hover:text-[#c9a961] transition-smooth font-medium">
+                  <a className="text-[#1e3a5f] hover:text-[#c9a961] transition-all duration-200 ease-out font-medium">
                     {page.label}
                   </a>
                 </Link>

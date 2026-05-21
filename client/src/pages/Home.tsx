@@ -60,7 +60,7 @@ export default function Home() {
               {/* Right: Service Cards */}
               <div className="relative z-10 space-y-6">
                 {/* Surface Operations Card */}
-                <div className="card-elevated p-8 hover:shadow-2xl transition-smooth">
+                <div className="card-elevated p-8 hover:shadow-2xl transition-all duration-200 ease-out">
                   <div className="w-12 h-12 bg-[#c9a961] rounded-lg flex items-center justify-center mb-4">
                     <Zap className="text-[#1e3a5f]" size={24} />
                   </div>
@@ -71,7 +71,7 @@ export default function Home() {
                     {t('home.surfaceDesc')}
                   </p>
                   <Link href="/what-we-do">
-                    <a className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-smooth flex items-center gap-2">
+                    <a className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-all duration-200 ease-out flex items-center gap-2">
                       {t('common.learnMore')}
                       <ArrowRight size={16} />
                     </a>
@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
 
                 {/* Underground Operations Card */}
-                <div className="card-elevated p-8 hover:shadow-2xl transition-smooth">
+                <div className="card-elevated p-8 hover:shadow-2xl transition-all duration-200 ease-out">
                   <div className="w-12 h-12 bg-[#c9a961] rounded-lg flex items-center justify-center mb-4">
                     <Zap className="text-[#1e3a5f]" size={24} />
                   </div>
@@ -90,7 +90,7 @@ export default function Home() {
                     {t('home.undergroundDesc')}
                   </p>
                   <Link href="/what-we-do">
-                    <a className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-smooth flex items-center gap-2">
+                    <a className="text-[#1e3a5f] font-semibold hover:text-[#c9a961] transition-all duration-200 ease-out flex items-center gap-2">
                       {t('common.learnMore')}
                       <ArrowRight size={16} />
                     </a>
