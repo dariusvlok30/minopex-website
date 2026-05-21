@@ -96,14 +96,12 @@ export default function About() {
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">{t('common.learnMore')}</h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Discover what we do and how we can help your mining operations.
+              {t('about.ctaDesc')}
             </p>
             <Link href="/what-we-do">
-              <a>
-                <Button className="btn-accent">
-                  {t('nav.whatWeDo')}
-                </Button>
-              </a>
+              <Button className="btn-accent">
+                {t('nav.whatWeDo')}
+              </Button>
             </Link>
           </div>
         </section>

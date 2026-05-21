@@ -15,6 +15,9 @@ export default function WhatWeDo() {
     { icon: Shield, title: t('whatWeDo.services.maintain'), desc: t('whatWeDo.services.maintainDesc') },
   ];
 
+  const surfaceList = [t('whatWeDo.surface.plants'), t('whatWeDo.surface.lab'), t('whatWeDo.surface.water')];
+  const undergroundList = [t('whatWeDo.underground.equipment'), t('whatWeDo.underground.safety'), t('whatWeDo.underground.readiness')];
+
   return (
     <div className="min-h-screen flex flex-col bg-[#f9fafb]">
       <Header />
@@ -36,24 +39,14 @@ export default function WhatWeDo() {
                 <h2 className="text-4xl font-bold text-[#111111] mb-6">{t('whatWeDo.surfaceOpsHeading')}</h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">{t('whatWeDo.surfaceOpsDesc')}</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Processing plants & facilities</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Laboratory services & quality assurance</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Water management systems</span>
-                  </li>
+                  {surfaceList.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-[#111111] text-xs font-black">✓</span>
+                      </div>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div
@@ -84,24 +77,14 @@ export default function WhatWeDo() {
                 <h2 className="text-4xl font-bold text-[#111111] mb-6">{t('whatWeDo.undergroundOpsHeading')}</h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">{t('whatWeDo.undergroundOpsDesc')}</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Advanced mechanised mining equipment</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Safety-first operational protocols</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Operational readiness & optimization</span>
-                  </li>
+                  {undergroundList.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-[#CC1919] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-white text-xs font-black">✓</span>
+                      </div>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -111,7 +94,7 @@ export default function WhatWeDo() {
         {/* Services Grid */}
         <section className="py-20 bg-white">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">Our Core Services</h2>
+            <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">{t('whatWeDo.coreServices')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {services.map((service, idx) => {
                 const Icon = service.icon;
@@ -136,11 +119,9 @@ export default function WhatWeDo() {
               <h2 className="text-4xl font-bold mb-6">{t('whatWeDo.qls')}</h2>
               <p className="text-xl text-gray-200 mb-8">{t('whatWeDo.qlsDesc')}</p>
               <Link href="/contact">
-                <a>
-                  <Button className="btn-accent">
-                    {t('common.contactUs')}
-                  </Button>
-                </a>
+                <Button className="btn-accent">
+                  {t('common.contactUs')}
+                </Button>
               </Link>
             </div>
           </div>

@@ -5,7 +5,6 @@ export type Language = 'en' | 'ar' | 'el';
 
 export const translations = {
   en: {
-    // Navigation
     nav: {
       home: 'Home',
       about: 'About',
@@ -16,7 +15,6 @@ export const translations = {
       contact: 'Contact',
       suppliers: 'Suppliers',
     },
-    // Footer
     footer: {
       offices: 'Offices',
       legal: 'Legal',
@@ -26,7 +24,6 @@ export const translations = {
       followUs: 'Follow Us',
       copyright: '© 2026 Minopex. All rights reserved. A DRA Global company.',
     },
-    // Homepage
     home: {
       tagline: 'Leading global plant operations and maintenance specialists',
       heroHeading: 'Operational Excellence in Global Mining',
@@ -47,8 +44,8 @@ export const translations = {
       ourPeopleDesc: 'With 2,000+ skilled professionals across 14+ countries, our team is the foundation of our success. We invest in safety, development, and creating a workplace where excellence thrives.',
       partnership: 'Part of DRA Global',
       partnershipDesc: 'Minopex is a leading company within the DRA Global group, delivering world-class mining operations and maintenance solutions.',
+      ctaDesc: 'Ready to partner with Minopex? Get in touch with our team today.',
     },
-    // About page
     about: {
       heading: 'About Minopex',
       subheading: 'Established in 1996, Minopex has grown to become a leading global mining operations specialist',
@@ -79,8 +76,8 @@ export const translations = {
       integrityDesc: 'Ethical practices in all operations',
       respect: 'Respect',
       respectDesc: 'Valuing people and communities',
+      ctaDesc: 'Discover what we do and how we can help your mining operations.',
     },
-    // What We Do page
     whatWeDo: {
       heading: 'What We Do',
       subheading: 'Comprehensive mining operations and maintenance solutions',
@@ -88,6 +85,17 @@ export const translations = {
       surfaceOpsDesc: 'From processing plants to laboratory services, we manage the complete surface operations lifecycle.',
       undergroundOpsHeading: 'Underground Operations',
       undergroundOpsDesc: 'Advanced mechanised mining with safety-first approach and operational readiness.',
+      surface: {
+        plants: 'Processing plants & facilities',
+        lab: 'Laboratory services & quality assurance',
+        water: 'Water management systems',
+      },
+      underground: {
+        equipment: 'Advanced mechanised mining equipment',
+        safety: 'Safety-first operational protocols',
+        readiness: 'Operational readiness & optimization',
+      },
+      coreServices: 'Our Core Services',
       services: {
         engineer: 'Engineer',
         engineerDesc: 'Design and optimize mining operations',
@@ -101,7 +109,6 @@ export const translations = {
       qls: 'Quality Laboratory Services',
       qlsDesc: 'State-of-the-art laboratory services for mineral analysis and quality assurance',
     },
-    // Sustainability page
     sustainability: {
       heading: 'Sustainability & Responsibility',
       subheading: 'Mining responsibly for a sustainable future',
@@ -118,17 +125,36 @@ export const translations = {
       airDesc: 'Monitoring and dust control systems',
       waste: 'Waste Management',
       wasteDesc: 'Responsible recycling and disposal',
+      ourCommitment: 'Our Commitment',
+      commitmentDesc: 'We are committed to responsible mining practices that protect the environment, support communities, and create lasting value for future generations.',
+      commitmentZeroHarm: 'Zero harm to people and environment',
+      commitmentImpact: 'Net positive impact on communities',
+      commitmentTransparent: 'Transparent and accountable operations',
+      ctaHeading: 'Join Us in Building a Sustainable Future',
+      ctaDesc: 'Partner with Minopex to achieve your mining goals responsibly.',
     },
-    // Careers page
     careers: {
       heading: 'Careers at Minopex',
       subheading: 'People are our greatest asset',
       whyJoin: 'Why Join Minopex?',
       whyJoinDesc: 'We offer competitive compensation, professional development, and a workplace culture that values safety, integrity, and innovation.',
+      whyChoose: 'Why Choose Minopex',
       applyNow: 'Apply Now',
       equalOpportunity: 'Minopex is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment.',
+      equalOpportunityHeading: 'Equal Opportunity Employer',
+      ctaHeading: 'Ready to Join Our Team?',
+      ctaDesc: 'Explore current opportunities and start your career with Minopex.',
+      benefits: {
+        devTitle: 'Professional Development',
+        devDesc: 'Continuous learning and career growth opportunities',
+        cultureTitle: 'Collaborative Culture',
+        cultureDesc: 'Work with talented professionals globally',
+        compTitle: 'Competitive Compensation',
+        compDesc: 'Attractive salary and benefits packages',
+        globalTitle: 'Global Opportunities',
+        globalDesc: 'Work across 14+ countries worldwide',
+      },
     },
-    // Contact page
     contact: {
       heading: 'Contact Us',
       subheading: 'Get in touch with our team',
@@ -137,6 +163,10 @@ export const translations = {
       lesotho: 'Lesotho',
       mozambique: 'Mozambique',
       saudiArabia: 'Saudi Arabia',
+      sendMessage: 'Send us a Message',
+      phone: 'Phone',
+      email: 'Email',
+      headquarters: 'Headquarters',
       form: {
         name: 'Full Name',
         email: 'Email Address',
@@ -147,7 +177,33 @@ export const translations = {
         success: 'Thank you for your message. We will get back to you soon.',
       },
     },
-    // Common
+    leadership: {
+      heading: 'Leadership',
+      subheading: 'Meet our leadership team',
+      comingSoon: 'Leadership team information coming soon.',
+    },
+    insights: {
+      heading: 'Insights & Blog',
+      subheading: 'Latest news and insights from Minopex',
+      comingSoon: 'Blog and insights coming soon.',
+    },
+    suppliers: {
+      heading: 'Suppliers',
+      subheading: 'Information for our suppliers',
+      comingSoon: 'Supplier information and resources coming soon.',
+    },
+    privacy: {
+      heading: 'Privacy Policy',
+      intro: 'Minopex is committed to protecting your privacy. This privacy policy explains how we collect, use, and protect your personal information.',
+      comingSoon: 'Full privacy policy content coming soon.',
+    },
+    paia: {
+      heading: 'PAIA',
+      subheading: 'Promotion of Access to Information Act',
+      manualHeading: 'PAIA Manual',
+      intro: 'In accordance with the Promotion of Access to Information Act (PAIA), Minopex provides access to information held by the company.',
+      comingSoon: 'PAIA manual and information requests coming soon.',
+    },
     common: {
       contactUs: 'Contact Us',
       learnMore: 'Learn More',
@@ -157,8 +213,8 @@ export const translations = {
       menu: 'Menu',
     },
   },
+
   ar: {
-    // Navigation
     nav: {
       home: 'الرئيسية',
       about: 'حول',
@@ -169,7 +225,6 @@ export const translations = {
       contact: 'اتصل بنا',
       suppliers: 'الموردون',
     },
-    // Footer
     footer: {
       offices: 'المكاتب',
       legal: 'قانوني',
@@ -179,7 +234,6 @@ export const translations = {
       followUs: 'تابعنا',
       copyright: '© 2026 مينوبكس. جميع الحقوق محفوظة. شركة تابعة لمجموعة DRA العالمية.',
     },
-    // Homepage
     home: {
       tagline: 'متخصصون عالميون رائدون في عمليات المصانع والصيانة',
       heroHeading: 'التميز التشغيلي في التعدين العالمي',
@@ -200,8 +254,8 @@ export const translations = {
       ourPeopleDesc: 'مع أكثر من 2000 متخصص ماهر عبر 14+ دول، فريقنا هو أساس نجاحنا. نستثمر في السلامة والتطوير وخلق مكان عمل يزدهر فيه التميز.',
       partnership: 'جزء من مجموعة DRA العالمية',
       partnershipDesc: 'مينوبكس هي شركة رائدة ضمن مجموعة DRA العالمية، وتقدم حلول عمليات التعدين والصيانة على مستوى عالمي.',
+      ctaDesc: 'هل أنت مستعد للشراكة مع مينوبكس؟ تواصل مع فريقنا اليوم.',
     },
-    // About page
     about: {
       heading: 'حول مينوبكس',
       subheading: 'تأسست عام 1996، أصبحت مينوبكس متخصصة عالمية رائدة في عمليات التعدين',
@@ -232,15 +286,26 @@ export const translations = {
       integrityDesc: 'الممارسات الأخلاقية في جميع العمليات',
       respect: 'الاحترام',
       respectDesc: 'تقدير الناس والمجتمعات',
+      ctaDesc: 'اكتشف ما نقوم به وكيف يمكننا مساعدة عمليات التعدين الخاصة بك.',
     },
-    // What We Do page
     whatWeDo: {
       heading: 'ما نفعله',
       subheading: 'حلول شاملة لعمليات التعدين والصيانة',
       surfaceOpsHeading: 'العمليات السطحية',
-      surfaceOpsDesc: 'من مصانع المعالجة إلى خدمات المختبرات، نإدير دورة حياة العمليات السطحية الكاملة.',
+      surfaceOpsDesc: 'من مصانع المعالجة إلى خدمات المختبرات، ندير دورة حياة العمليات السطحية الكاملة.',
       undergroundOpsHeading: 'العمليات تحت الأرض',
       undergroundOpsDesc: 'التعدين الآلي المتقدم مع نهج السلامة أولاً والجاهزية التشغيلية.',
+      surface: {
+        plants: 'مصانع ومرافق المعالجة',
+        lab: 'خدمات المختبر وضمان الجودة',
+        water: 'أنظمة إدارة المياه',
+      },
+      underground: {
+        equipment: 'معدات تعدين آلية متقدمة',
+        safety: 'بروتوكولات تشغيل تضع السلامة أولاً',
+        readiness: 'الجاهزية التشغيلية والتحسين',
+      },
+      coreServices: 'خدماتنا الأساسية',
       services: {
         engineer: 'الهندسة',
         engineerDesc: 'تصميم وتحسين عمليات التعدين',
@@ -254,7 +319,6 @@ export const translations = {
       qls: 'خدمات المختبر الجودة',
       qlsDesc: 'خدمات مختبرات حديثة لتحليل المعادن وضمان الجودة',
     },
-    // Sustainability page
     sustainability: {
       heading: 'الاستدامة والمسؤولية',
       subheading: 'التعدين بمسؤولية من أجل مستقبل مستدام',
@@ -271,17 +335,36 @@ export const translations = {
       airDesc: 'أنظمة المراقبة والتحكم في الغبار',
       waste: 'إدارة النفايات',
       wasteDesc: 'إعادة تدوير والتخلص المسؤول',
+      ourCommitment: 'التزامنا',
+      commitmentDesc: 'نحن ملتزمون بممارسات التعدين المسؤولة التي تحمي البيئة وتدعم المجتمعات وتخلق قيمة دائمة للأجيال القادمة.',
+      commitmentZeroHarm: 'لا ضرر للناس والبيئة',
+      commitmentImpact: 'أثر صافٍ إيجابي على المجتمعات',
+      commitmentTransparent: 'عمليات شفافة وخاضعة للمساءلة',
+      ctaHeading: 'انضم إلينا في بناء مستقبل مستدام',
+      ctaDesc: 'شارك مينوبكس لتحقيق أهداف التعدين الخاصة بك بشكل مسؤول.',
     },
-    // Careers page
     careers: {
       heading: 'الوظائف في مينوبكس',
       subheading: 'الناس هم أعظم أصولنا',
       whyJoin: 'لماذا تنضم إلى مينوبكس؟',
       whyJoinDesc: 'نحن نقدم تعويضات تنافسية وتطوير مهني ومكان عمل يقدر السلامة والنزاهة والابتكار.',
+      whyChoose: 'لماذا تختار مينوبكس',
       applyNow: 'تقديم الطلب الآن',
       equalOpportunity: 'مينوبكس هي صاحب عمل توفر فرصاً متساوية. نحتفل بالتنوع والتزمنا بخلق بيئة شاملة.',
+      equalOpportunityHeading: 'صاحب عمل متكافئ الفرص',
+      ctaHeading: 'هل أنت مستعد للانضمام إلى فريقنا؟',
+      ctaDesc: 'استكشف الفرص الحالية وابدأ مسيرتك المهنية مع مينوبكس.',
+      benefits: {
+        devTitle: 'التطوير المهني',
+        devDesc: 'فرص التعلم المستمر والنمو المهني',
+        cultureTitle: 'ثقافة تعاونية',
+        cultureDesc: 'العمل مع محترفين موهوبين على مستوى عالمي',
+        compTitle: 'تعويض تنافسي',
+        compDesc: 'رواتب جذابة وحزم مزايا',
+        globalTitle: 'فرص عالمية',
+        globalDesc: 'العمل عبر 14+ دولة حول العالم',
+      },
     },
-    // Contact page
     contact: {
       heading: 'اتصل بنا',
       subheading: 'تواصل مع فريقنا',
@@ -290,6 +373,10 @@ export const translations = {
       lesotho: 'ليسوتو',
       mozambique: 'موزمبيق',
       saudiArabia: 'المملكة العربية السعودية',
+      sendMessage: 'أرسل لنا رسالة',
+      phone: 'هاتف',
+      email: 'بريد إلكتروني',
+      headquarters: 'المقر الرئيسي',
       form: {
         name: 'الاسم الكامل',
         email: 'عنوان البريد الإلكتروني',
@@ -300,7 +387,33 @@ export const translations = {
         success: 'شكراً لرسالتك. سنعود إليك قريباً.',
       },
     },
-    // Common
+    leadership: {
+      heading: 'القيادة',
+      subheading: 'تعرف على فريق قيادتنا',
+      comingSoon: 'معلومات فريق القيادة قادمة قريباً.',
+    },
+    insights: {
+      heading: 'الرؤى والمدونة',
+      subheading: 'أحدث الأخبار والرؤى من مينوبكس',
+      comingSoon: 'المدونة والرؤى قادمة قريباً.',
+    },
+    suppliers: {
+      heading: 'الموردون',
+      subheading: 'معلومات لمورديننا',
+      comingSoon: 'معلومات وموارد الموردين قادمة قريباً.',
+    },
+    privacy: {
+      heading: 'سياسة الخصوصية',
+      intro: 'مينوبكس ملتزمة بحماية خصوصيتك. تشرح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحماية معلوماتك الشخصية.',
+      comingSoon: 'محتوى سياسة الخصوصية الكامل قادم قريباً.',
+    },
+    paia: {
+      heading: 'قانون الوصول إلى المعلومات',
+      subheading: 'قانون تشجيع الوصول إلى المعلومات',
+      manualHeading: 'دليل قانون الوصول إلى المعلومات',
+      intro: 'وفقاً لقانون تشجيع الوصول إلى المعلومات، تتيح مينوبكس الوصول إلى المعلومات التي تحتفظ بها الشركة.',
+      comingSoon: 'دليل قانون الوصول إلى المعلومات وطلبات المعلومات قادمة قريباً.',
+    },
     common: {
       contactUs: 'اتصل بنا',
       learnMore: 'اعرف المزيد',
@@ -310,8 +423,8 @@ export const translations = {
       menu: 'القائمة',
     },
   },
+
   el: {
-    // Navigation
     nav: {
       home: 'Αρχική',
       about: 'Σχετικά',
@@ -322,7 +435,6 @@ export const translations = {
       contact: 'Επικοινωνία',
       suppliers: 'Προμηθευτές',
     },
-    // Footer
     footer: {
       offices: 'Γραφεία',
       legal: 'Νομικά',
@@ -332,7 +444,6 @@ export const translations = {
       followUs: 'Ακολουθήστε μας',
       copyright: '© 2026 Minopex. Όλα τα δικαιώματα διατηρούνται. Εταιρεία του ομίλου DRA Global.',
     },
-    // Homepage
     home: {
       tagline: 'Κορυφαίοι παγκόσμιοι ειδικοί σε λειτουργίες εργοστασίων και συντήρηση',
       heroHeading: 'Λειτουργική Αριστεία στην Παγκόσμια Εξόρυξη',
@@ -350,16 +461,16 @@ export const translations = {
         ore: 'Μετάλλευμα/Μήνα',
       },
       ourPeople: 'Το μεγαλύτερο περιουσιακό μας στοιχείο είναι ο λαός μας',
-      ourPeopleDesc: 'Με 2.000+ ειδικευμένους επαγγελματίες σε 14+ χώρες, η ομάδα μας είναι το θεμέλιο της επιτυχίας μας. Επενδύουμε στην ασφάλεια, την ανάπτυξη και τη δημιουργία ενός χώρου εργασίας όπου η αριστεία ευδοκιμεί.',
+      ourPeopleDesc: 'Με 2.000+ ειδικευμένους επαγγελματίες σε 14+ χώρες, η ομάδα μας είναι το θεμέλιο της επιτυχίας μας.',
       partnership: 'Μέρος του ομίλου DRA Global',
       partnershipDesc: 'Η Minopex είναι κορυφαία εταιρεία εντός του ομίλου DRA Global, παρέχοντας λύσεις λειτουργιών εξόρυξης και συντήρησης παγκόσμιας κλάσης.',
+      ctaDesc: 'Έτοιμοι να συνεργαστείτε με τη Minopex; Επικοινωνήστε με την ομάδα μας σήμερα.',
     },
-    // About page
     about: {
       heading: 'Σχετικά με τη Minopex',
       subheading: 'Ιδρύθηκε το 1996, η Minopex έχει γίνει κορυφαία παγκόσμια ειδικός σε λειτουργίες εξόρυξης',
       history: 'Η Ιστορία μας',
-      historyDesc: 'Ιδρύθηκε το 1996 με δέσμευση για λειτουργική αριστεία, η Minopex έχει εξελιχθεί σε αξιόπιστη συνεργάτιδα για λειτουργίες εξόρυξης παγκοσμίως. Με 30+ χρόνια συνδυασμένης εμπειρίας, έχουμε επιτυχώς λειτουργήσει 50+ εργοστάσια σε πολλά εμπορεύματα.',
+      historyDesc: 'Ιδρύθηκε το 1996 με δέσμευση για λειτουργική αριστεία, η Minopex έχει εξελιχθεί σε αξιόπιστη συνεργάτιδα για λειτουργίες εξόρυξης παγκοσμίως.',
       globalFootprint: 'Παγκόσμια Παρουσία',
       commodities: 'Εμπορεύματα που Εξυπηρετούμε',
       coal: 'Άνθρακας',
@@ -385,8 +496,8 @@ export const translations = {
       integrityDesc: 'Ηθικές πρακτικές σε όλες τις λειτουργίες',
       respect: 'Σεβασμός',
       respectDesc: 'Εκτίμηση ανθρώπων και κοινοτήτων',
+      ctaDesc: 'Ανακαλύψτε τι κάνουμε και πώς μπορούμε να βοηθήσουμε τις λειτουργίες εξόρυξής σας.',
     },
-    // What We Do page
     whatWeDo: {
       heading: 'Τι κάνουμε',
       subheading: 'Ολοκληρωμένες λύσεις λειτουργιών εξόρυξης και συντήρησης',
@@ -394,6 +505,17 @@ export const translations = {
       surfaceOpsDesc: 'Από εργοστάσια επεξεργασίας έως υπηρεσίες εργαστηρίου, διαχειριζόμαστε τον πλήρη κύκλο ζωής επιφανειακών λειτουργιών.',
       undergroundOpsHeading: 'Υπόγειες Λειτουργίες',
       undergroundOpsDesc: 'Προηγμένη μηχανοποιημένη εξόρυξη με προσέγγιση ασφάλειας πρώτα και λειτουργική ετοιμότητα.',
+      surface: {
+        plants: 'Μονάδες επεξεργασίας & εγκαταστάσεις',
+        lab: 'Εργαστηριακές υπηρεσίες & διασφάλιση ποιότητας',
+        water: 'Συστήματα διαχείρισης νερού',
+      },
+      underground: {
+        equipment: 'Προηγμένος εξοπλισμός μηχανοποιημένης εξόρυξης',
+        safety: 'Πρωτόκολλα λειτουργίας με προτεραιότητα ασφάλειας',
+        readiness: 'Λειτουργική ετοιμότητα & βελτιστοποίηση',
+      },
+      coreServices: 'Οι Βασικές μας Υπηρεσίες',
       services: {
         engineer: 'Μηχανική',
         engineerDesc: 'Σχεδίαση και βελτιστοποίηση λειτουργιών εξόρυξης',
@@ -407,7 +529,6 @@ export const translations = {
       qls: 'Υπηρεσίες Εργαστηρίου Ποιότητας',
       qlsDesc: 'Υπηρεσίες εργαστηρίου τελευταίας τεχνολογίας για ανάλυση μεταλλευμάτων και διασφάλιση ποιότητας',
     },
-    // Sustainability page
     sustainability: {
       heading: 'Βιωσιμότητα και Ευθύνη',
       subheading: 'Εξόρυξη με ευθύνη για ένα βιώσιμο μέλλον',
@@ -424,17 +545,36 @@ export const translations = {
       airDesc: 'Συστήματα παρακολούθησης και ελέγχου σκόνης',
       waste: 'Διαχείριση Αποβλήτων',
       wasteDesc: 'Υπεύθυνη ανακύκλωση και διάθεση',
+      ourCommitment: 'Η Δέσμευσή μας',
+      commitmentDesc: 'Είμαστε δεσμευμένοι σε υπεύθυνες πρακτικές εξόρυξης που προστατεύουν το περιβάλλον, υποστηρίζουν τις κοινότητες και δημιουργούν διαρκή αξία για τις μελλοντικές γενιές.',
+      commitmentZeroHarm: 'Μηδενική βλάβη για ανθρώπους και περιβάλλον',
+      commitmentImpact: 'Καθαρή θετική επίδραση στις κοινότητες',
+      commitmentTransparent: 'Διαφανείς και υπόλογες λειτουργίες',
+      ctaHeading: 'Ελάτε Μαζί μας για ένα Βιώσιμο Μέλλον',
+      ctaDesc: 'Συνεργαστείτε με τη Minopex για να πετύχετε τους στόχους εξόρυξής σας υπεύθυνα.',
     },
-    // Careers page
     careers: {
       heading: 'Καριέρα στη Minopex',
       subheading: 'Οι άνθρωποι είναι το μεγαλύτερο περιουσιακό μας στοιχείο',
       whyJoin: 'Γιατί να Ενταχθείτε στη Minopex;',
       whyJoinDesc: 'Προσφέρουμε ανταγωνιστική αποζημίωση, επαγγελματική ανάπτυξη και πολιτισμό χώρου εργασίας που εκτιμά την ασφάλεια, την ακεραιότητα και την καινοτομία.',
+      whyChoose: 'Γιατί να Επιλέξετε τη Minopex',
       applyNow: 'Υποβάλετε Αίτηση Τώρα',
       equalOpportunity: 'Η Minopex είναι Εργοδότης Ίσων Ευκαιριών. Γιορτάζουμε την ποικιλομορφία και είμαστε δεσμευμένοι στη δημιουργία ενός χώρου που περιλαμβάνει όλους.',
+      equalOpportunityHeading: 'Εργοδότης Ίσων Ευκαιριών',
+      ctaHeading: 'Έτοιμοι να Ενταχθείτε στην Ομάδα μας;',
+      ctaDesc: 'Εξερευνήστε τρέχουσες ευκαιρίες και ξεκινήστε την καριέρα σας με τη Minopex.',
+      benefits: {
+        devTitle: 'Επαγγελματική Ανάπτυξη',
+        devDesc: 'Συνεχής μάθηση και ευκαιρίες καριέρας',
+        cultureTitle: 'Συνεργατική Κουλτούρα',
+        cultureDesc: 'Εργαστείτε με ταλαντούχους επαγγελματίες παγκοσμίως',
+        compTitle: 'Ανταγωνιστική Αποζημίωση',
+        compDesc: 'Ελκυστικοί μισθοί και παροχές',
+        globalTitle: 'Παγκόσμιες Ευκαιρίες',
+        globalDesc: 'Εργαστείτε σε 14+ χώρες παγκοσμίως',
+      },
     },
-    // Contact page
     contact: {
       heading: 'Επικοινωνία',
       subheading: 'Επικοινωνήστε με την ομάδα μας',
@@ -443,6 +583,10 @@ export const translations = {
       lesotho: 'Lesotho',
       mozambique: 'Μοζαμβίκη',
       saudiArabia: 'Σαουδική Αραβία',
+      sendMessage: 'Στείλτε μας Μήνυμα',
+      phone: 'Τηλέφωνο',
+      email: 'Email',
+      headquarters: 'Κεντρικά Γραφεία',
       form: {
         name: 'Πλήρες Όνομα',
         email: 'Διεύθυνση Email',
@@ -453,7 +597,33 @@ export const translations = {
         success: 'Ευχαριστούμε για το μήνυμά σας. Θα επικοινωνήσουμε σύντομα.',
       },
     },
-    // Common
+    leadership: {
+      heading: 'Ηγεσία',
+      subheading: 'Γνωρίστε την ομάδα ηγεσίας μας',
+      comingSoon: 'Πληροφορίες για την ομάδα ηγεσίας σύντομα.',
+    },
+    insights: {
+      heading: 'Αναλύσεις & Blog',
+      subheading: 'Τελευταία νέα και αναλύσεις από τη Minopex',
+      comingSoon: 'Blog και αναλύσεις σύντομα.',
+    },
+    suppliers: {
+      heading: 'Προμηθευτές',
+      subheading: 'Πληροφορίες για τους προμηθευτές μας',
+      comingSoon: 'Πληροφορίες και πόροι για προμηθευτές σύντομα.',
+    },
+    privacy: {
+      heading: 'Πολιτική Απορρήτου',
+      intro: 'Η Minopex δεσμεύεται να προστατεύει την ιδιωτικότητά σας. Αυτή η πολιτική απορρήτου εξηγεί πώς συλλέγουμε, χρησιμοποιούμε και προστατεύουμε τα προσωπικά σας στοιχεία.',
+      comingSoon: 'Πλήρες περιεχόμενο πολιτικής απορρήτου σύντομα.',
+    },
+    paia: {
+      heading: 'Νόμος PAIA',
+      subheading: 'Νόμος για την Προώθηση Πρόσβασης σε Πληροφορίες',
+      manualHeading: 'Εγχειρίδιο PAIA',
+      intro: 'Σύμφωνα με τον Νόμο για την Προώθηση Πρόσβασης σε Πληροφορίες, η Minopex παρέχει πρόσβαση σε πληροφορίες που τηρεί η εταιρεία.',
+      comingSoon: 'Εγχειρίδιο PAIA και αιτήματα πληροφοριών σύντομα.',
+    },
     common: {
       contactUs: 'Επικοινωνία',
       learnMore: 'Μάθετε περισσότερα',
@@ -468,14 +638,23 @@ export const translations = {
 export function getTranslation(lang: Language, path: string): string {
   const keys = path.split('.');
   let value: any = translations[lang];
-  
+
   for (const key of keys) {
     if (value && typeof value === 'object' && key in value) {
       value = value[key];
     } else {
-      return path; // Fallback to path if translation not found
+      // Fallback to English
+      let fallback: any = translations['en'];
+      for (const k of keys) {
+        if (fallback && typeof fallback === 'object' && k in fallback) {
+          fallback = fallback[k];
+        } else {
+          return path;
+        }
+      }
+      return typeof fallback === 'string' ? fallback : path;
     }
   }
-  
+
   return typeof value === 'string' ? value : path;
 }

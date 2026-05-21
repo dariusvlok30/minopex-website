@@ -46,7 +46,7 @@ export default function Home() {
                   <Link href="/what-we-do">
                     <Button className="btn-accent flex items-center gap-2 text-sm">
                       {t('home.seeWhatWeDo')}
-                      <ArrowRight size={16} />
+                      <ArrowRight size={16} className="rtl:scale-x-[-1]" />
                     </Button>
                   </Link>
                   <Link href="/contact">
@@ -74,7 +74,7 @@ export default function Home() {
                       </p>
                       <Link href="/what-we-do" className="text-xs font-bold text-[#111111] hover:text-[#CC1919] transition-colors duration-150 flex items-center gap-1.5 uppercase tracking-wider">
                         {t('common.learnMore')}
-                        <ArrowRight size={13} />
+                        <ArrowRight size={13} className="rtl:scale-x-[-1]" />
                       </Link>
                     </div>
                   </div>
@@ -95,7 +95,7 @@ export default function Home() {
                       </p>
                       <Link href="/what-we-do" className="text-xs font-bold text-[#111111] hover:text-[#F7C200] transition-colors duration-150 flex items-center gap-1.5 uppercase tracking-wider">
                         {t('common.learnMore')}
-                        <ArrowRight size={13} />
+                        <ArrowRight size={13} className="rtl:scale-x-[-1]" />
                       </Link>
                     </div>
                   </div>
@@ -225,7 +225,7 @@ export default function Home() {
               {t('common.contactUs')}
             </h2>
             <p className="text-base text-gray-500 mb-10 leading-relaxed">
-              Ready to partner with Minopex? Get in touch with our team today.
+              {t('home.ctaDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/contact">

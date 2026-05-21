@@ -8,10 +8,10 @@ export default function Careers() {
   const { t } = useLanguage();
 
   const benefits = [
-    { icon: Award, title: 'Professional Development', desc: 'Continuous learning and career growth opportunities' },
-    { icon: Users, title: 'Collaborative Culture', desc: 'Work with talented professionals globally' },
-    { icon: Briefcase, title: 'Competitive Compensation', desc: 'Attractive salary and benefits packages' },
-    { icon: Globe, title: 'Global Opportunities', desc: 'Work across 14+ countries worldwide' },
+    { icon: Award, title: t('careers.benefits.devTitle'), desc: t('careers.benefits.devDesc') },
+    { icon: Users, title: t('careers.benefits.cultureTitle'), desc: t('careers.benefits.cultureDesc') },
+    { icon: Briefcase, title: t('careers.benefits.compTitle'), desc: t('careers.benefits.compDesc') },
+    { icon: Globe, title: t('careers.benefits.globalTitle'), desc: t('careers.benefits.globalDesc') },
   ];
 
   return (
@@ -60,7 +60,7 @@ export default function Careers() {
         {/* Benefits Grid */}
         <section className="py-20 bg-gradient-to-r from-[#111111]/5 to-[#F7C200]/5">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">Why Choose Minopex</h2>
+            <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">{t('careers.whyChoose')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit, idx) => {
                 const Icon = benefit.icon;
@@ -82,7 +82,7 @@ export default function Careers() {
         <section className="py-20 bg-white">
           <div className="container mx-auto">
             <div className="bg-gradient-to-r from-[#111111] to-[#1a1a1a] text-white p-12 rounded-lg">
-              <h2 className="text-3xl font-bold mb-6">Equal Opportunity Employer</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('careers.equalOpportunityHeading')}</h2>
               <p className="text-lg text-gray-200 leading-relaxed">
                 {t('careers.equalOpportunity')}
               </p>
@@ -93,9 +93,9 @@ export default function Careers() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#111111] to-[#1a1a1a] text-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Join Our Team?</h2>
+            <h2 className="text-4xl font-bold mb-6">{t('careers.ctaHeading')}</h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Explore current opportunities and start your career with Minopex.
+              {t('careers.ctaDesc')}
             </p>
             <a
               href="https://careers.minopex.com"

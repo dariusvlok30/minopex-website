@@ -78,29 +78,23 @@ export default function Sustainability() {
                 }}
               />
               <div>
-                <h2 className="text-4xl font-bold text-[#111111] mb-6">Our Commitment</h2>
+                <h2 className="text-4xl font-bold text-[#111111] mb-6">{t('sustainability.ourCommitment')}</h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  We are committed to responsible mining practices that protect the environment, support communities, and create lasting value for future generations.
+                  {t('sustainability.commitmentDesc')}
                 </p>
                 <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Zero harm to people and environment</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Net positive impact on communities</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <span className="text-gray-700">Transparent and accountable operations</span>
-                  </li>
+                  {[
+                    t('sustainability.commitmentZeroHarm'),
+                    t('sustainability.commitmentImpact'),
+                    t('sustainability.commitmentTransparent'),
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-[#F7C200] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="text-[#111111] text-xs font-black">✓</span>
+                      </div>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -110,16 +104,14 @@ export default function Sustainability() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#111111] to-[#1a1a1a] text-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Join Us in Building a Sustainable Future</h2>
+            <h2 className="text-4xl font-bold mb-6">{t('sustainability.ctaHeading')}</h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Partner with Minopex to achieve your mining goals responsibly.
+              {t('sustainability.ctaDesc')}
             </p>
             <Link href="/contact">
-              <a>
-                <Button className="btn-accent">
-                  {t('common.contactUs')}
-                </Button>
-              </a>
+              <Button className="btn-accent">
+                {t('common.contactUs')}
+              </Button>
             </Link>
           </div>
         </section>

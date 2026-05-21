@@ -89,7 +89,7 @@ export default function Contact() {
         <section className="py-20 bg-gradient-to-r from-[#111111]/5 to-[#F7C200]/5">
           <div className="container mx-auto">
             <div className="max-w-2xl mx-auto">
-              <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">Send us a Message</h2>
+              <h2 className="text-4xl font-bold text-[#111111] mb-12 text-center">{t('contact.sendMessage')}</h2>
               <form onSubmit={handleSubmit} className="card-elevated p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
@@ -178,21 +178,21 @@ export default function Contact() {
                 <div className="w-16 h-16 bg-[#F7C200] rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Phone className="text-[#111111]" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-[#111111] mb-2">Phone</h3>
+                <h3 className="text-xl font-bold text-[#111111] mb-2">{t('contact.phone')}</h3>
                 <p className="text-gray-700">+1 (555) 123-4567</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#F7C200] rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Mail className="text-[#111111]" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-[#111111] mb-2">Email</h3>
+                <h3 className="text-xl font-bold text-[#111111] mb-2">{t('contact.email')}</h3>
                 <p className="text-gray-700">info@minopex.com</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#F7C200] rounded-lg flex items-center justify-center mx-auto mb-4">
                   <MapPin className="text-[#111111]" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-[#111111] mb-2">Headquarters</h3>
+                <h3 className="text-xl font-bold text-[#111111] mb-2">{t('contact.headquarters')}</h3>
                 <p className="text-gray-700">Johannesburg, South Africa</p>
               </div>
             </div>
