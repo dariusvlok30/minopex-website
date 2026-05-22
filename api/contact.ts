@@ -4,7 +4,7 @@ import { translate } from '@vitalets/google-translate-api';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const RECIPIENT = 'darius.vlok@draglobal.com';
+const RECIPIENT = 'dariusvlok30@gmail.com';
 
 const LANG_NAMES: Record<string, string> = {
   ar: 'Arabic',
