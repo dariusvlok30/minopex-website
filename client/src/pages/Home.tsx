@@ -56,21 +56,23 @@ export default function Home() {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-[#f4f6f8]">
       <Header />
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="hero-section bg-[#111111] text-white">
+        <section className="hero-section bg-[#111111] text-white pt-24">
           <div
             className="absolute inset-0 opacity-35"
             style={{
               backgroundImage: `url('https://minopex.com/media/oxkbdc3j/30yr-email-banner-02_11zon-1.jpg')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundSize: 'contain',
+              backgroundPosition: 'center bottom',
+              backgroundRepeat: 'no-repeat',
             }}
           />
           <div className="hero-overlay" />
+          <div className="absolute inset-0 z-[6] bg-[radial-gradient(circle_at_20%_20%,rgba(247,194,0,0.16),transparent_28%),radial-gradient(circle_at_85%_18%,rgba(255,255,255,0.12),transparent_24%)]" />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#111111]/60 to-transparent z-10" />
 
           <div className="hero-content">
@@ -78,7 +80,7 @@ export default function Home() {
 
               {/* Left: Text Content */}
               <div className="relative z-20">
-                <div className="inline-flex items-center gap-2 bg-[#F7C200] text-[#111111] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-7">
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#F7C200]/35 bg-[#F7C200]/90 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#111111] shadow-[0_16px_50px_rgba(247,194,0,0.22)] mb-7">
                   <span className="w-2 h-2 bg-[#111111] rounded-full" />
                   {t('home.tagline')}
                 </div>
@@ -105,19 +107,19 @@ export default function Home() {
 
               {/* Right: Service Cards */}
               <div className="relative z-20 space-y-5">
-                <div className="card-elevated p-7 group">
+                <div className="glass-card-dark p-7 group">
                   <div className="flex items-start gap-5">
-                    <div className="w-11 h-11 bg-[#F7C200] rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
+                    <div className="w-11 h-11 bg-[#F7C200] rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200 shadow-[0_16px_40px_rgba(247,194,0,0.28)]">
                       <Mountain className="text-[#111111]" size={22} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-base font-bold text-[#111111] mb-1.5">
+                      <h3 className="text-base font-bold text-white mb-1.5">
                         {t('home.surfaceOperations')}
                       </h3>
-                      <p className="text-sm text-gray-500 mb-3 leading-relaxed">
+                      <p className="text-sm text-white/66 mb-3 leading-relaxed">
                         {t('home.surfaceDesc')}
                       </p>
-                      <Link href="/what-we-do" className="text-xs font-bold text-[#111111] hover:text-[#CC1919] transition-colors duration-150 flex items-center gap-1.5 uppercase tracking-wider">
+                      <Link href="/what-we-do" className="text-xs font-bold text-[#F7C200] hover:text-white transition-colors duration-150 flex items-center gap-1.5 uppercase tracking-wider">
                         {t('common.learnMore')}
                         <ArrowRight size={13} className="rtl:scale-x-[-1]" />
                       </Link>
@@ -125,19 +127,19 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="card-elevated p-7 group">
+                <div className="glass-card-dark p-7 group">
                   <div className="flex items-start gap-5">
-                    <div className="w-11 h-11 bg-[#CC1919] rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
+                    <div className="w-11 h-11 bg-[#CC1919] rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200 shadow-[0_16px_40px_rgba(204,25,25,0.28)]">
                       <Layers className="text-white" size={22} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-base font-bold text-[#111111] mb-1.5">
+                      <h3 className="text-base font-bold text-white mb-1.5">
                         {t('home.undergroundOperations')}
                       </h3>
-                      <p className="text-sm text-gray-500 mb-3 leading-relaxed">
+                      <p className="text-sm text-white/66 mb-3 leading-relaxed">
                         {t('home.undergroundDesc')}
                       </p>
-                      <Link href="/what-we-do" className="text-xs font-bold text-[#111111] hover:text-[#F7C200] transition-colors duration-150 flex items-center gap-1.5 uppercase tracking-wider">
+                      <Link href="/what-we-do" className="text-xs font-bold text-[#F7C200] hover:text-white transition-colors duration-150 flex items-center gap-1.5 uppercase tracking-wider">
                         {t('common.learnMore')}
                         <ArrowRight size={13} className="rtl:scale-x-[-1]" />
                       </Link>
@@ -150,16 +152,16 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section className="bg-white py-16 border-b border-gray-100">
+        <section className="relative -mt-12 z-20 pb-16">
           <div className="container mx-auto">
-            <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-gray-100">
+            <div className="grid grid-cols-2 gap-3 rounded-[2rem] border border-white/55 bg-white/38 p-3 shadow-[0_30px_90px_rgba(17,17,17,0.18)] backdrop-blur-2xl lg:grid-cols-4">
               {[
                 { num: '2,000+', label: t('home.stats.employees') },
                 { num: '14+', label: t('home.stats.countries') },
                 { num: '50+', label: t('home.stats.plants') },
                 { num: '6.7Mt', label: t('home.stats.ore') },
               ].map((stat) => (
-                <div key={stat.label} className="stat-item px-8 first:pl-0 last:pr-0">
+                <div key={stat.label} className="glass-stat px-5 py-7">
                   <div className="w-8 h-1 bg-[#F7C200] rounded-full mx-auto mb-3" />
                   <div className="stat-number">{stat.num}</div>
                   <div className="stat-label">{stat.label}</div>
@@ -170,7 +172,7 @@ export default function Home() {
         </section>
 
         {/* Our People Section */}
-        <section className="py-24 bg-[#f9fafb]">
+        <section className="py-24 bg-[linear-gradient(180deg,#f4f6f8_0%,#ffffff_100%)]">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -188,7 +190,7 @@ export default function Home() {
                 </Link>
               </div>
               <div
-                className="h-[420px] rounded-2xl overflow-hidden shadow-2xl"
+                className="glass-image-frame h-[420px]"
                 style={{
                   backgroundImage: `url('https://minopex.com/media/wrlgi4yk/microsoftteams-image-15-768x576.jpg')`,
                   backgroundSize: 'cover',
@@ -204,7 +206,7 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div
-                className="h-[420px] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1"
+                className="glass-image-frame h-[420px] order-2 lg:order-1"
                 style={{
                   backgroundImage: `url('https://minopex.com/media/nenlvae0/dsc01110.jpg')`,
                   backgroundSize: 'cover',
@@ -249,7 +251,7 @@ export default function Home() {
                 </Link>
               </div>
               <div
-                className="h-[420px] rounded-2xl overflow-hidden shadow-2xl"
+                className="glass-image-frame h-[420px]"
                 style={{
                   backgroundImage: `url('https://minopex.com/media/lshmjwvu/download-7.jpg')`,
                   backgroundSize: 'cover',

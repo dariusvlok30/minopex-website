@@ -116,7 +116,7 @@ export default function Header() {
   ];
 
   const navLinkClass =
-    'px-3.5 py-2 text-sm font-semibold text-gray-700 hover:text-[#111111] hover:bg-[#F7C200]/10 rounded-lg transition-all duration-150';
+    'px-3.5 py-2 text-sm font-semibold text-white/82 hover:text-white hover:bg-white/12 rounded-full transition-all duration-200';
 
   const MegaItem = ({
     item,
@@ -129,14 +129,14 @@ export default function Header() {
       <NavigationMenuLink asChild>
         <Link
           href={item.href}
-          className="group flex gap-3 rounded-xl border-l-4 border-transparent p-3 transition-all duration-150 hover:border-[#F7C200] hover:bg-[#F7C200]/10"
+          className="group flex gap-3 rounded-2xl border border-white/8 bg-white/[0.04] p-3 transition-all duration-200 hover:border-[#F7C200]/50 hover:bg-[#F7C200]/12"
         >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#111111] text-[#F7C200] transition-colors group-hover:bg-[#F7C200] group-hover:text-[#111111]">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/10 text-[#F7C200] shadow-inner transition-colors group-hover:bg-[#F7C200] group-hover:text-[#111111]">
             <Icon size={18} />
           </span>
           <span className="min-w-0">
-            <span className="block text-sm font-bold text-[#111111]">{item.title}</span>
-            <span className="mt-0.5 block text-xs leading-relaxed text-gray-500">
+            <span className="block text-sm font-bold text-white">{item.title}</span>
+            <span className="mt-0.5 block text-xs leading-relaxed text-white/58">
               {item.description}
             </span>
           </span>
@@ -146,12 +146,14 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <header className="fixed left-0 right-0 top-4 z-50 pointer-events-none">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between h-20">
+        <div className="liquid-nav pointer-events-auto flex min-h-16 items-center justify-between px-3 sm:px-4">
           <Link href="/" className="flex items-center gap-3 hover:opacity-85 transition-opacity duration-200">
-            <MinopexLogo className="w-10 h-9" />
-            <span className="font-black text-xl tracking-tight text-[#111111] hidden sm:inline select-none">
+            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-white/85 shadow-inner">
+              <MinopexLogo className="w-8 h-7" />
+            </span>
+            <span className="font-black text-xl tracking-tight text-white hidden sm:inline select-none">
               MINOPEX
             </span>
           </Link>
@@ -170,12 +172,19 @@ export default function Header() {
                 <NavigationMenuTrigger
                   className={cn(
                     navLinkClass,
-                    'h-auto bg-transparent data-[state=open]:bg-[#F7C200]/10 data-[state=open]:text-[#111111]'
+                    'h-auto bg-transparent data-[state=open]:bg-white/14 data-[state=open]:text-white'
                   )}
                 >
                   {t('nav.about')}
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="nav-panel-enter w-[360px] rounded-2xl border border-gray-100 bg-white p-4 shadow-2xl">
+                <NavigationMenuContent className="nav-panel-enter glass-dropdown w-[380px] p-3">
+                  <div className="mb-3 flex items-center justify-between px-2">
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#F7C200]">Company</p>
+                      <p className="text-sm text-white/62">Who we are and how we lead</p>
+                    </div>
+                    <span className="h-2 w-2 rounded-full bg-[#F7C200]" />
+                  </div>
                   <div className="grid gap-1">
                     {aboutItems.map((item) => (
                       <MegaItem key={item.title} item={item} />
@@ -188,12 +197,19 @@ export default function Header() {
                 <NavigationMenuTrigger
                   className={cn(
                     navLinkClass,
-                    'h-auto bg-transparent data-[state=open]:bg-[#F7C200]/10 data-[state=open]:text-[#111111]'
+                    'h-auto bg-transparent data-[state=open]:bg-white/14 data-[state=open]:text-white'
                   )}
                 >
                   {t('nav.whatWeDo')}
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="nav-panel-enter w-[620px] rounded-2xl border border-gray-100 bg-white p-4 shadow-2xl">
+                <NavigationMenuContent className="nav-panel-enter glass-dropdown w-[640px] p-3">
+                  <div className="mb-3 flex items-center justify-between px-2">
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#F7C200]">Capabilities</p>
+                      <p className="text-sm text-white/62">Operations services across the mine value chain</p>
+                    </div>
+                    <span className="h-2 w-2 rounded-full bg-[#CC1919]" />
+                  </div>
                   <div className="grid grid-cols-2 gap-1">
                     {serviceItems.map((item) => (
                       <MegaItem key={item.title} item={item} />
@@ -222,23 +238,23 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:bg-gray-100 hover:text-[#111111] transition-all duration-150 focus:outline-none">
-                  <Globe size={15} className="text-gray-500" />
+                <button className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/8 px-3 py-2 text-sm font-semibold text-white/82 transition-all duration-200 hover:bg-white/14 hover:text-white focus:outline-none">
+                  <Globe size={15} className="text-[#F7C200]" />
                   <span className="hidden sm:inline">
                     {currentLang.label} {currentLang.name}
                   </span>
                   <span className="sm:hidden">{currentLang.label}</span>
-                  <ChevronDown size={13} className="text-gray-400" />
+                  <ChevronDown size={13} className="text-white/50" />
                 </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="min-w-[170px] p-1 rounded-xl shadow-xl border border-gray-100">
+              <DropdownMenuContent align="end" className="glass-dropdown min-w-[180px] p-1.5">
                 {languages.map((lang) => (
                   <DropdownMenuItem
                     key={lang.code}
                     onClick={() => setLanguage(lang.code as Language)}
-                    className="flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer text-sm font-medium hover:bg-gray-50 focus:bg-gray-50"
+                    className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-white/80 cursor-pointer hover:bg-white/10 focus:bg-white/10 focus:text-white"
                   >
-                    <span className="text-xs font-black text-gray-400">{lang.label}</span>
+                    <span className="text-xs font-black text-[#F7C200]">{lang.label}</span>
                     <span className="flex-1">{lang.name}</span>
                     {language === lang.code && (
                       <Check size={14} className="text-[#F7C200]" strokeWidth={3} />
@@ -250,7 +266,7 @@ export default function Header() {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-all duration-150"
+              className="lg:hidden rounded-full border border-white/10 bg-white/8 p-2 text-white transition-all duration-150 hover:bg-white/14"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -259,12 +275,12 @@ export default function Header() {
         </div>
 
         {mobileMenuOpen && (
-          <nav className="lg:hidden border-t border-gray-100 py-3 space-y-0.5 pb-4">
+          <nav className="pointer-events-auto mt-3 rounded-3xl border border-white/12 bg-[#111111]/78 p-2 shadow-2xl backdrop-blur-2xl lg:hidden">
             {mobileNavItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex items-center px-4 py-2.5 text-sm font-semibold text-gray-700 hover:text-[#111111] hover:bg-[#F7C200]/10 rounded-lg transition-all duration-150"
+                className="flex items-center rounded-2xl px-4 py-2.5 text-sm font-semibold text-white/82 transition-all duration-150 hover:bg-white/10 hover:text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
