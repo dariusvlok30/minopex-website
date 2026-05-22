@@ -325,4 +325,30 @@ html.rtl h4, html.rtl h5, html.rtl h6 {
     content: '';
     @apply block w-12 h-1 bg-[#F7C200] mb-4 rounded-full;
   }
+
+  /* Nav mega menu panel animation */
+  .nav-panel-enter {
+    animation: navPanelIn 0.18s ease-out;
+  }
+
+  @keyframes navPanelIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Premium card hover */
+  .card-premium {
+    @apply bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300;
+  }
+
+  /* Gallery carousel item overlay gradient */
+  .gallery-gradient {
+    background: linear-gradient(to top, rgba(17,17,17,0.85) 0%, rgba(17,17,17,0.3) 60%, transparent 100%);
+  }
 }

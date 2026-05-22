@@ -1,9 +1,56 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { Gallery4 } from '@/components/ui/gallery4';
+import type { Gallery4Item } from '@/components/ui/gallery4';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Link } from 'wouter';
 import { ArrowRight, Mountain, Layers } from 'lucide-react';
+
+const insightsItems: Gallery4Item[] = [
+  {
+    id: 'community',
+    title: 'Making a Meaningful Impact in Our Communities',
+    description: 'Minopex continues to invest in community development programmes across its operational footprint.',
+    href: '/insights',
+    image: 'https://minopex.com/media/uw2oeru1/kenny2-28.jpg',
+  },
+  {
+    id: 'safety',
+    title: 'Celebrating a Remarkable Safety Milestone at Ad Duwayhi',
+    description: 'Our Saudi Arabia team achieved an outstanding safety record, reflecting our zero-harm commitment.',
+    href: '/insights',
+    image: 'https://minopex.com/media/ux5pglen/ad-duwayhi-team-image.jpg',
+  },
+  {
+    id: 'phola',
+    title: 'Phola Coal Honoured with FFPS Safety Award at CoalSafe 2025',
+    description: 'Recognition for operational excellence and industry-leading safety performance.',
+    href: '/insights',
+    image: 'https://minopex.com/media/t3kai1uc/photo-2025-05-08-16-28-11.jpg',
+  },
+  {
+    id: 'minerals',
+    title: 'Minerals Processing: The Secrets to Operational Success',
+    description: 'After more than 21 years the Kroondal 1 Plant managed by Minopex is still breaking production records.',
+    href: '/insights',
+    image: 'https://minopex.com/media/qtafgqyn/thought-leadership-blog-banner-4-1536x768.png',
+  },
+  {
+    id: 'supply',
+    title: 'Supply Chain: The Unsung Hero in Mining',
+    description: 'Exploring how integrated supply chain management drives operational efficiency at Minopex.',
+    href: '/insights',
+    image: 'https://minopex.com/media/n5nn3bzl/thought-leadership-blog-banner-3-1-1536x768.png',
+  },
+  {
+    id: 'giyani',
+    title: 'Supporting Innovation in Battery-Grade Manganese Production',
+    description: 'Minopex partners to support cutting-edge battery mineral processing technology in Botswana.',
+    href: '/insights',
+    image: 'https://minopex.com/media/nxalnomp/giyana.jpg',
+  },
+];
 
 export default function Home() {
   const { t } = useLanguage();
@@ -16,20 +63,19 @@ export default function Home() {
         {/* Hero Section */}
         <section className="hero-section bg-[#111111] text-white">
           <div
-            className="absolute inset-0 opacity-30"
+            className="absolute inset-0 opacity-35"
             style={{
-              backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663559878215/6jvdNPcGGMPGcAdwJZLocL/minopex-hero-mining-QRdXSXm4aLPRGjLfSETKt4.webp')`,
+              backgroundImage: `url('https://minopex.com/media/oxkbdc3j/30yr-email-banner-02_11zon-1.jpg')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
           />
           <div className="hero-overlay" />
-
-          {/* Bottom gradient transition */}
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#111111]/60 to-transparent z-10" />
 
           <div className="hero-content">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-8">
+
               {/* Left: Text Content */}
               <div className="relative z-20">
                 <div className="inline-flex items-center gap-2 bg-[#F7C200] text-[#111111] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-7">
@@ -59,7 +105,6 @@ export default function Home() {
 
               {/* Right: Service Cards */}
               <div className="relative z-20 space-y-5">
-                {/* Surface Operations Card */}
                 <div className="card-elevated p-7 group">
                   <div className="flex items-start gap-5">
                     <div className="w-11 h-11 bg-[#F7C200] rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
@@ -80,7 +125,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Underground Operations Card */}
                 <div className="card-elevated p-7 group">
                   <div className="flex items-start gap-5">
                     <div className="w-11 h-11 bg-[#CC1919] rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-200">
@@ -146,7 +190,7 @@ export default function Home() {
               <div
                 className="h-[420px] rounded-2xl overflow-hidden shadow-2xl"
                 style={{
-                  backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663559878215/6jvdNPcGGMPGcAdwJZLocL/minopex-team-collaboration-KVeAScSBAPBmwmWYw5PMQ9.webp')`,
+                  backgroundImage: `url('https://minopex.com/media/wrlgi4yk/microsoftteams-image-15-768x576.jpg')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -162,7 +206,7 @@ export default function Home() {
               <div
                 className="h-[420px] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1"
                 style={{
-                  backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663559878215/6jvdNPcGGMPGcAdwJZLocL/minopex-surface-operations-QhsqZm6GTh4sSGZe95mkUX.webp')`,
+                  backgroundImage: `url('https://minopex.com/media/nenlvae0/dsc01110.jpg')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -187,7 +231,6 @@ export default function Home() {
 
         {/* Sustainability Highlight */}
         <section className="py-24 bg-[#111111] text-white relative overflow-hidden">
-          {/* Decorative accent */}
           <div className="absolute top-0 left-0 w-1 h-full bg-[#F7C200]" />
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -208,13 +251,22 @@ export default function Home() {
               <div
                 className="h-[420px] rounded-2xl overflow-hidden shadow-2xl"
                 style={{
-                  backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663559878215/6jvdNPcGGMPGcAdwJZLocL/minopex-sustainability-h9X7F3a49tBX6fCZweDq4K.webp')`,
+                  backgroundImage: `url('https://minopex.com/media/lshmjwvu/download-7.jpg')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               />
             </div>
           </div>
+        </section>
+
+        {/* Insights Preview — Gallery4 Carousel */}
+        <section className="bg-[#f9fafb]">
+          <Gallery4
+            title={t('insights.heading')}
+            description={t('insights.subheading')}
+            items={insightsItems}
+          />
         </section>
 
         {/* CTA Section */}

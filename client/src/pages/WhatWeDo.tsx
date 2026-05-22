@@ -52,7 +52,7 @@ export default function WhatWeDo() {
               <div
                 className="h-96 rounded-lg overflow-hidden shadow-lg"
                 style={{
-                  backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663559878215/6jvdNPcGGMPGcAdwJZLocL/minopex-surface-operations-QhsqZm6GTh4sSGZe95mkUX.webp')`,
+                  backgroundImage: `url('https://minopex.com/media/nenlvae0/dsc01110.jpg')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
@@ -68,7 +68,7 @@ export default function WhatWeDo() {
               <div
                 className="h-96 rounded-lg overflow-hidden shadow-lg order-2 lg:order-1"
                 style={{
-                  backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663559878215/6jvdNPcGGMPGcAdwJZLocL/minopex-underground-mining-AfrHUocfzXVBAFFKVt6Jmd.webp')`,
+                  backgroundImage: `url('https://minopex.com/media/cwihrg5o/photo-17-underground-mining-umm.jpeg')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
