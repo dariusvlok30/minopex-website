@@ -63,6 +63,7 @@ export default function Header() {
     { code: 'en', name: 'English', label: 'EN' },
     { code: 'ar', name: 'Arabic', label: 'AR' },
     { code: 'el', name: 'Greek', label: 'EL' },
+    { code: 'es', name: 'Spanish', label: 'ES' },
   ];
 
   const currentLang = languages.find((item) => item.code === language) ?? languages[0];
